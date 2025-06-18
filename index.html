@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FastapG – 3秒で仕入れ判断が終わるAmazon分析ツール</title>
+  <style>
+    :root {
+      --primary:#2563eb; /* cobalt */
+      --primary-dark:#1e40af;
+      --accent:#f59e0b; /* amber */
+      --bg:#f9fafb;
+      --text:#111827;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","メイリオ",sans-serif;color:var(--text);background:var(--bg);line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    section{padding:60px 20px;max-width:1080px;margin:0 auto;}
+    .btn{display:inline-block;background:var(--primary);color:#fff;font-weight:600;padding:14px 30px;border-radius:8px;transition:.2s;}
+    .btn:hover{background:var(--primary-dark);}    
+    .stars{color:var(--accent);font-size:1.1rem;letter-spacing:1px;}
+    .flex{display:flex;align-items:center;gap:12px;}
+    .grid{display:grid;gap:40px;}
+    .hero{padding-top:90px;text-align:center;background:#fff;position:relative;overflow:hidden;}
+    .hero h1{font-size:2.6rem;margin-bottom:18px;}
+    .hero p{font-size:1.125rem;margin-bottom:36px;}
+    .badge{background:#fff;border:1px solid var(--primary);color:var(--primary-dark);padding:4px 10px;border-radius:20px;font-size:.875rem;font-weight:600;}
+    .features{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .feature-box{background:#fff;padding:24px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05);}   
+    .comparison table{width:100%;border-collapse:collapse;}
+    .comparison th,.comparison td{padding:12px 8px;border-bottom:1px solid #e5e7eb;text-align:center;}
+    .comparison th{background:var(--primary);color:#fff;font-weight:600;}
+    .comparison td:first-child{font-weight:600;text-align:left;}
+    .review-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.05);}   
+    .cta-final{text-align:center;}
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <header class="hero">
+    <span class="badge">Chrome拡張機能</span>
+    <h1>3秒で“仕入れるべき商品”が分かる<br>FastapG</h1>
+    <p>利益計算・売れ行き・仕入れ判断まで、Amazonせどりの悩みを<span style="font-weight:700;">これ1つ</span>で解決します。</p>
+    <div class="flex" style="justify-content:center;margin-bottom:24px;">
+      <span class="stars">★★★★★</span>
+      <span>5.0 / 5.0（15 件）</span>
+      <span>|</span>
+      <span><strong>613+</strong> ユーザー</span>
+    </div>
+    <a class="btn" href="https://chromewebstore.google.com/detail/fastapg/anmiohclnhoakeaegnjggehnhkcdbboh" target="_blank" rel="noopener" id="cta">今すぐ無料でインストール</a>
+    <!-- Demo GIF Placeholder -->
+    <div style="margin-top:50px;max-width:800px;margin-left:auto;margin-right:auto;">
+      <img src="images/demo.gif" alt="FastapG デモ" style="width:100%;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.1);" />
+    </div>
+  </header>
+
+  <!-- Pain points -->
+  <section>
+    <h2 style="font-size:1.8rem;margin-bottom:16px;">😰 こんな悩み、ありませんか？</h2>
+    <ul style="list-style:none;padding:0;font-size:1.1rem;">
+      <li>❌ 商品リサーチに時間がかかりすぎる</li>
+      <li>❌ 利益計算が複雑で間違えやすい</li>
+      <li>❌ 売れ行きの判断基準が曖昧</li>
+      <li>❌ 複数サイトの行き来で疲弊</li>
+      <li>❌ Keepaの数字だけでは判断に迷う</li>
+    </ul>
+  </section>
+
+  <!-- Features -->
+  <section style="background:#fff;">
+    <h2 style="font-size:1.8rem;text-align:center;margin-bottom:40px;">🎯 FastapGがすべて解決</h2>
+    <div class="grid features">
+      <div class="feature-box">
+        <h3>⚡ 高速 3秒分析</h3>
+        <p>ページを開くだけで必要な情報が一瞬で表示。もう待ち時間ゼロ。</p>
+      </div>
+      <div class="feature-box">
+        <h3>🏆 S〜Eランクで一目瞭然</h3>
+        <p>独自アルゴリズムが新品・中古を6段階評価。初心者でもプロと同じ基準に。</p>
+      </div>
+      <div class="feature-box">
+        <h3>💰 利益が秒速でわかる</h3>
+        <p>FBA手数料を自動計算し、推奨仕入れ価格（利益率20/30％）を提示。</p>
+      </div>
+      <div class="feature-box">
+        <h3>📊 実売データで安心</h3>
+        <p>30日・90日販売数、出品者推移、在庫切れ率まで表示。「本当に売れるの？」を数字で解消。</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a class="btn" href="https://chromewebstore.google.com/detail/fastapg/anmiohclnhoakeaegnjggehnhkcdbboh" target="_blank" rel="noopener">秒速分析を体験する</a>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="comparison">
+    <h2 style="font-size:1.8rem;text-align:center;margin-bottom:24px;">🔥 他ツールとの比較</h2>
+    <table>
+      <thead>
+        <tr><th>比較項目</th><th>FastapG</th><th>他ツール</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>表示速度</td><td>⚡ 約3秒</td><td>🐌 5秒以上</td></tr>
+        <tr><td>ランク評価</td><td>✅ S〜Eランク<br>新品・中古別</td><td>❌ 数値のみ</td></tr>
+        <tr><td>利益計算</td><td>✅ 自動</td><td>❌ 手動</td></tr>
+        <tr><td>一括分析</td><td>✅ 大量処理対応</td><td>❌ 1件ずつ</td></tr>
+        <tr><td>価格</td><td>🆓 完全無料</td><td>💸 月額課金</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Reviews / Social proof -->
+  <section style="background:#fff;">
+    <h2 style="font-size:1.8rem;text-align:center;margin-bottom:32px;">⭐ ユーザーの声 (Chrome ウェブストア 5.0)</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+      <div class="review-card">
+        <p style="margin:0;font-weight:600;">★★★★★ &nbsp;せどり歴3年・T.M さん</p>
+        <p style="margin-top:8px;">手計算ゼロで仕入れ判断が秒速に。リサーチ時間が80％短縮！</p>
+      </div>
+      <div class="review-card">
+        <p style="margin:0;font-weight:600;">★★★★★ &nbsp;初心者・K.S さん</p>
+        <p style="margin-top:8px;">利益率提案が神。仕入れミスが激減しました。</p>
+      </div>
+      <div class="review-card">
+        <p style="margin:0;font-weight:600;">★★★★★ &nbsp;副業せどらー・S.A さん</p>
+        <p style="margin-top:8px;">無料なのに有料級。Keepa APIコストも節約できて嬉しい！</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a class="btn" href="https://chromewebstore.google.com/detail/fastapg/anmiohclnhoakeaegnjggehnhkcdbboh" target="_blank" rel="noopener">高評価レビューを体感</a>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section>
+    <h2 style="font-size:1.8rem;text-align:center;margin-bottom:32px;">⚡ たった3ステップで開始</h2>
+    <div class="grid features">
+      <div class="feature-box"><strong>Step1.</strong> Chrome ウェブストアでインストール（30秒）</div>
+      <div class="feature-box"><strong>Step2.</strong> Amazon 商品ページを開く</div>
+      <div class="feature-box"><strong>Step3.</strong> 分析結果を確認するだけ！設定不要</div>
+    </div>
+  </section>
+
+  <!-- Limited offer -->
+  <section style="background:#fdf6e3;">
+    <h2 style="font-size:1.8rem;text-align:center;margin-bottom:16px;">🎁 期間限定・無料キャンペーン</h2>
+    <p style="text-align:center;font-size:1.1rem;margin-bottom:28px;">先行ユーザー <strong style="color:var(--accent);">3,000名</strong> 達成次第、無料公開を終了します。<br>今すぐ始めてライバルに差をつけよう！</p>
+    <div style="text-align:center;">
+      <a class="btn" href="https://chromewebstore.google.com/detail/fastapg/anmiohclnhoakeaegnjggehnhkcdbboh" target="_blank" rel="noopener">無料キャンペーンで始める</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2 style="font-size:1.8rem;text-align:center;margin-bottom:32px;">❓ よくある質問</h2>
+    <details open><summary><strong>本当に無料ですか？</strong></summary><p>はい。FastapG は完全無料で、隠れた費用もありません。</p></details>
+    <details><summary><strong>Keepa APIキーは必要ですか？</strong></summary><p>独自の仕組みでAPIを効率化しているため、個人でのAPIキー取得は不要です。</p></details>
+    <details><summary><strong>設定は難しくないですか？</strong></summary><p>インストールするだけで即座に使用開始できます。設定は不要です。</p></details>
+    <details><summary><strong>サポートはありますか？</strong></summary><p>公式ドキュメントとコミュニティサポートが利用可能です。</p></details>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-final">
+    <h2 style="font-size:2rem;margin-bottom:16px;">🚀 先に動いた人が、先に稼ぐ。</h2>
+    <p style="font-size:1.125rem;margin-bottom:32px;">FastapG を今日から使って、最短で利益を最大化しよう！</p>
+    <a class="btn" href="https://chromewebstore.google.com/detail/fastapg/anmiohclnhoakeaegnjggehnhkcdbboh" target="_blank" rel="noopener">今すぐ無料インストール</a>
+  </section>
+
+  <footer style="padding:40px 20px;text-align:center;font-size:.875rem;color:#6b7280;">
+    © 2025 Laaf LLC. All rights reserved.
+  </footer>
+</body>
+</html>
